@@ -1,7 +1,4 @@
---//--CF cu
 script_key = _G.Key
-repeat task.wait() until game.Players.LocalPlayer and game:IsLoaded()
-task.wait(3)
 _G.Config = {
     AutoFarm = true,
     Hide_Inventory = getgenv().Config.Hide_Inventory, --Less lag
@@ -38,7 +35,7 @@ _G.Config = {
     Favorite = { --Auto Ignore Sell 
         ListTreeFavorite = {},
         AutoFavoritePlant = true,
-        ListPetFavorite = {"Kitsune","Butterfly","Dragonfly","Capybara","Ostrich","Mimic Octopus"},
+        ListPetFavorite = getgenv().Config.KeepPet,
         AutoFavoritePet = true
     },
     Misc = {
@@ -58,6 +55,7 @@ _G.Config = {
         AutoBuyEgg = true,
         HatchEgg = true,
         Place = {
+            "Mythical Egg",
             "Common Egg",
             "Zen Egg",
             "Primal Egg",
@@ -107,6 +105,7 @@ _G.Config = {
             AutoTrade = true,
             AutoZenQuest = true,
             AutoFarmKitsune = getgenv().Config.AutoFarmKitsune,
+            AutoCorruptedKitsune = getgenv().Config.AutoCorruptedKitsune
         }
     }
 }
