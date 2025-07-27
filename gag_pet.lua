@@ -28,8 +28,8 @@ _G.Config = {
         Enable = getgenv().Config.FpsLock.Enabled,
     },
     IgnoreBuy = { -- Auto skip buy 
-        Ignorelist = {"Carrot", "Tomato", "Blueberry", "Strawberry"},
-        MinMoneyToIgnore = 1000000,
+        Ignorelist = {"Carrot", "Tomato", "Blueberry", "Strawberry", "Corn", "Orange Tulip", "Rose", "Monoblooma", "Daffodil", "Raspberry"},
+        MinMoneyToIgnore = 10000000,
         AutoIgnoreBuy = true
     },
     Favorite = { --Auto Ignore Sell 
@@ -92,7 +92,7 @@ _G.Config = {
     },
     Delete = {
         LimitPlants = 300,
-        Destroylist = {"Blueberry", "Strawberry", "Carrot", "Tomato"},
+        Destroylist = {"Carrot", "Tomato", "Blueberry", "Strawberry", "Corn", "Orange Tulip", "Rose", "Monoblooma", "Daffodil", "Raspberry"},
         AutoDestroy = true
     },
     Event = {
